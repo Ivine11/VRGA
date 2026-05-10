@@ -68,13 +68,6 @@ If your model path differs, modify the following line in `eval_qwen.py`:
 model_id = f"models/{model_name}"
 ```
 
-For example:
-
-```python
-model_id = f"./models/{model_name}"
-```
-
----
 
 # Dataset Preparation
 
