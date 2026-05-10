@@ -1,6 +1,7 @@
 # VRGA
 
-## *Deeper Thought, Weaker Aim: Understanding and Mitigating Perceptual Impairment during Reasoning in Multimodal Large Language Models*
+## [*Deeper Thought, Weaker Aim: Understanding and Mitigating Perceptual Impairment during Reasoning in Multimodal Large Language Models*](https://arxiv.org/pdf/2603.14184)
+
 
 🎉 **Accepted to CVPR 2026**
 
@@ -213,9 +214,8 @@ Each line contains one JSON record:
 
 ---
 
-# Typical Workflow
 
-## 1. Evaluate with Attention Intervention
+# Evaluate with Attention Intervention
 
 ```bash
 python eval_qwen.py \
@@ -223,44 +223,6 @@ python eval_qwen.py \
     --modify modify_att
 ```
 
----
-
-## 2. Evaluate Baseline Inference
-
-```bash
-python eval_qwen.py \
-    --data_name POPE \
-    --modify base
-```
-
----
-
-## 3. Batch Evaluation
-
-The `main` function already contains loops over multiple datasets.
-
-Simply run:
-
-```bash
-python eval_qwen.py
-```
-
----
-
-# Quick Test
-
-```bash
-python eval_qwen.py \
-    --device 0 \
-    --data_name POPE \
-    --max_new_tokens 100
-```
-
----
-
-
-
----
 
 # Acknowledgements
 
